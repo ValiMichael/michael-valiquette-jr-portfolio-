@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easley Shop Build | Michael Valiquette Jr.</title>
+    <meta name="description"
+        content="Easley Shop Build: Personal Infrastructure & Prototyping Lab. End-to-end workshop construction, equipment integration, and rapid prototyping capabilities.">
+    <meta property="og:title" content="Easley Shop Build | Michael Valiquette Jr.">
+    <meta property="og:description"
+        content="Easley Shop Build: Personal Infrastructure & Prototyping Lab. End-to-end workshop construction, equipment integration, and rapid prototyping capabilities.">
+    <meta property="og:image" content="images/easley-workshop-22.jpg">
+    <meta property="og:url"
+        content="https://valimichael.github.io/michael-valiquette-jr-portfolio/easley-workshop.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Easley Shop Build | Michael Valiquette Jr.">
+    <meta name="twitter:description"
+        content="Easley Shop Build: Personal Infrastructure & Prototyping Lab. End-to-end workshop construction, equipment integration, and rapid prototyping capabilities.">
+    <meta name="twitter:image" content="images/easley-workshop-22.jpg">
+
+    <!-- Global site styles (variables, typography, buttons, nav, footer, portfolio cards) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- =====================================================================
+         NAVIGATION
+         Always rendered in the "scrolled" state on detail pages (dark background)
+         so the nav is immediately visible without needing to scroll.
+         All links point back to index.html sections using the # anchor pattern.
+    ====================================================================== -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <div><a href="index.html#home" class="logo">MV</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#why-Michael" class="nav-link">Why Michael</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="index.html#patents" class="nav-link">Patents</a></li>
+                <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- Hamburger icon: three spans become animated X on mobile via script.js -->
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- =====================================================================
+         HERO SECTION
+         Full-width banner with a background photo, dark overlay gradient,
+         and centered title/subtitle/tags. Height is fixed in detail-pages.css.
+         The .project-hero-overlay gradient darkens toward the bottom so the
+         text (which sits at the bottom of the hero) remains readable.
+    ====================================================================== -->
+    <section class="project-hero">
+        <!-- Background image: sits behind overlay and content (z-index: 0) -->
+        <div class="project-hero-image">
+            <img src="images/easley-workshop-22.jpg" alt="Easley Shop Build">
+            <!-- Gradient overlay: fades image to near-black at bottom (z-index: 1) -->
+            <div class="project-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <!-- Content: rendered above overlay (z-index: 2) -->
+            <div class="project-hero-content">
+                <h1 class="project-title">Easley Shop Build</h1>
+                <p class="project-subtitle">Personal Infrastructure | Prototyping Lab</p>
+                <!-- Quick-scan tags: show at a glance what this project is about -->
+                <div class="project-meta">
+                    <span class="project-tag">Workshop Construction</span>
+                    <span class="project-tag">Prototyping</span>
+                    <span class="project-tag">Enterprising, Self-Teaching, Hands-On</span>
+                    <span class="project-tag">2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         MAIN CONTENT
+         All page content lives inside .project-content > .container.
+         Sections are stacked vertically, each using .content-section
+         as the standard content wrapper (max-width: 85%, margin: auto,
+         padding: 0 3rem) to keep text readable and centered on wide screens.
+    ====================================================================== -->
+    <section class="project-content">
+        <div class="container">
+            <!-- OVERVIEW GRID -->
+            <div class="project-overview">
+                <div class="overview-grid">
+                    <div class="overview-item">
+                        <h3>Scope</h3>
+                        <p>End-to-end shop design and equipment integration</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Capabilities</h3>
+                        <p>CNC Milling, 3D Printing, Electronics, Woodworking</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Learning</h3>
+                        <p>A project that provided hands-on experience in shop design, equipment integration, and
+                            prototyping.</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Enterprising</h3>
+                        <p>A project that demonstrated initiative, problem-solving, and hands-on learning in a
+                            real-world setting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PORTFOLIO IMAGE GRID -->
+            <div class="portfolio-grid">
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-1.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-2.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                                                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-3.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-4.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                                                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-5.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-6.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                                                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-7.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-8.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                                                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-9.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-10.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                                                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-11.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-12.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                                                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-13.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-14.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                                                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-15.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-16.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                                                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-17.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-18.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                                                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-19.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-20.jpeg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                                                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-21.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/easley-workshop-22.jpg" alt="Workshop Build">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <!--<h3>Title</h3>
+                        <p class="portfolio-description">Descriptive Caption</p>-->
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add more images as needed for the gallery -->
+        </div>
+
+        <!-- PROJECT DESCRIPTION -->
+        <div class="project-description">
+            <h2>Built a Complete Workshop from the Ground Up</h2>
+            <p>
+                With my wife, I managed a full construction project that transformed our vision into reality. We
+                laid the concrete block structure, built the framing, installed windows and doors, added vinyl
+                siding (per HOA requirements), installed shingles, eaves, and soffit, pulled electrical wire
+                throughout, installed lighting, outlets, and panels, added insulation, and finished with
+                drywall.
+                The result: a fully-equipped makerspace featuring a small CNC mill, 3D printers, precision
+                tools,
+                and electronics stations—enabling rapid prototyping and iterative design validation for personal
+                projects and innovations. End-to-end project management and hands-on execution.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h3>I Built My Own Shop</h3>
+            <p>
+                When I left the machine shop floor for sales, I didn't stop building. I took my commissions and
+                bought a CNC mill, manual lathe, and industrial tooling. I converted my home shop (which I also
+                built myself) into a prototyping lab with 3D printers, woodworking equipment, and electronics
+                stations.
+            </p>
+        </div>
+
+        <div class="project-cta">
+            <h2>From Vision to Reality</h2>
+            <p>
+                This shop is a testament to my ability to manage complex, hands-on projects from start to
+                finish—blending technical skill, resourcefulness, and a passion for making. Let's build
+                something
+                together.
+            </p>
+            <div class="cta-buttons">
+                <a href="index.html#contact" class="btn btn-primary btn-large">Discuss Your Project</a>
+                <a href="index.html#portfolio" class="btn btn-secondary btn-large">View More Work</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         FOOTER
+         Consistent with index.html footer. All internal links use the
+         index.html# prefix because this is a separate page, not a scroll
+         position on the current page.
+    ====================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div><a href="index.html#home" class="logo-large">MV</a></div>
+                    <p>Product Design Engineer & Innovator</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#patents">Patents</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <div class="contact-details">
+                        <p><span class="contact-label">Email</span> <a
+                                href="mailto:valimichael84@gmail.com">valimichael84@gmail.com</a></p>
+                        <p><span class="contact-label">Call</span> <a href="tel:+16127199181">(612) 719-9181</a></p>
+                        <a href="https://maps.app.goo.gl/9mNbehaqarzEzC7N9" class="contact-link">Easley, SC</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Michael Valiquette Jr. All rights reserved.</p>
+                <p class="footer-tagline">Transforming Ideas Into Reality</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =====================================================================
+         LIGHTBOX MODAL
+         Overlay that displays a portfolio image full-size.
+         Opened by clicking any .portfolio-image; navigated with prev/next
+         buttons or arrow keys; closed with the X button, Escape, or a
+         click on the dark backdrop.
+    ====================================================================== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#8249;</button>
+        <button class="lightbox-next" aria-label="Next image">&#8250;</button>
+        <div class="lightbox-content">
+            <img class="lightbox-img" src="" alt="">
+            <p class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- script.js handles: mobile nav toggle, hamburger animation, scroll-based nav styling -->
+    <script src="script.js"></script>
+
+    <script>
+        /* Lightbox — page-specific, self-contained */
+        (function () {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = lightbox.querySelector('.lightbox-img');
+            const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+            const closeBtn = lightbox.querySelector('.lightbox-close');
+            const prevBtn = lightbox.querySelector('.lightbox-prev');
+            const nextBtn = lightbox.querySelector('.lightbox-next');
+
+            /* Build an ordered array of all portfolio image cards */
+            const items = Array.from(document.querySelectorAll('.portfolio-grid .portfolio-image'));
+            let current = 0;
+
+            function openLightbox(index) {
+                current = index;
+                const img = items[index].querySelector('img');
+                const titleEl = items[index].closest('.portfolio-item').querySelector('.portfolio-content h3');
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightboxCaption.textContent = titleEl ? titleEl.textContent : '';
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden'; /* prevent background scroll */
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            function navigate(dir) {
+                current = (current + dir + items.length) % items.length;
+                openLightbox(current);
+            }
+
+            /* Click any portfolio image card to open */
+            items.forEach(function (item, i) {
+                item.addEventListener('click', function () { openLightbox(i); });
+            });
+
+            /* Close controls */
+            closeBtn.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) closeLightbox(); /* click on backdrop */
+            });
+
+            /* Navigation */
+            prevBtn.addEventListener('click', function (e) { e.stopPropagation(); navigate(-1); });
+            nextBtn.addEventListener('click', function (e) { e.stopPropagation(); navigate(1); });
+
+            /* Keyboard: Escape to close, arrow keys to navigate */
+            document.addEventListener('keydown', function (e) {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') navigate(-1);
+                if (e.key === 'ArrowRight') navigate(1);
+            });
+        }());
+    </script>
+</body>
+
+</html>

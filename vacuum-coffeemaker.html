@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacuum Brewed Beverage Apparatus | Michael Valiquette Jr.</title>
+
+    <!-- SEO: Page-specific description for search engine results -->
+    <meta name="description"
+        content="Vacuum Brewed Beverage Apparatus by Michael Valiquette Jr. — reduces cold brew time from 24 hours to 10 minutes using vacuum-assisted extraction. US Patent US10624491B1.">
+
+    <!-- Open Graph meta tags: controls preview card when shared on Facebook, LinkedIn, etc. -->
+    <meta property="og:title" content="Vacuum Brewed Beverage Apparatus | Michael Valiquette Jr.">
+    <meta property="og:description"
+        content="Vacuum Brewed Beverage Apparatus by Michael Valiquette Jr. — reduces cold brew time from 24 hours to 10 minutes using vacuum-assisted extraction. US Patent US10624491B1.">
+    <meta property="og:image" content="https://valimichael.github.io/michael-valiquette-jr-portfolio/main-photo.png">
+    <meta property="og:url"
+        content="https://valimichael.github.io/michael-valiquette-jr-portfolio/vacuum-coffeemaker.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card meta tags: controls preview card when shared on X/Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vacuum Brewed Beverage Apparatus | Michael Valiquette Jr.">
+    <meta name="twitter:description"
+        content="Vacuum Brewed Beverage Apparatus by Michael Valiquette Jr. — reduces cold brew time from 24 hours to 10 minutes using vacuum-assisted extraction. US Patent US10624491B1.">
+    <meta name="twitter:image" content="https://valimichael.github.io/michael-valiquette-jr-portfolio/main-photo.png">
+
+    <!-- Global site styles (variables, typography, buttons, nav, footer, portfolio cards) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- =====================================================================
+         NAVIGATION
+         Always rendered in the "scrolled" state on detail pages (dark background)
+         so the nav is immediately visible without needing to scroll.
+         All links point back to index.html sections using the # anchor pattern.
+    ====================================================================== -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <div><a href="index.html#home" class="logo">MV</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#why-Michael" class="nav-link">Why Michael</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="index.html#patents" class="nav-link">Patents</a></li>
+                <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- Hamburger icon: three spans become animated X on mobile via script.js -->
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- =====================================================================
+         HERO SECTION
+         Full-width banner with a background photo, dark overlay gradient,
+         and centered title/subtitle/tags. Height is fixed in detail-pages.css.
+         The .project-hero-overlay gradient darkens toward the bottom so the
+         text (which sits at the bottom of the hero) remains readable.
+    ====================================================================== -->
+    <section class="project-hero">
+        <!-- Background image: sits behind overlay and content (z-index: 0) -->
+        <div class="project-hero-image">
+            <img src="images/cold-brew-hero-image.png" alt="Vacuum Brewed Beverage Apparatus">
+            <!-- Gradient overlay: fades image to near-black at bottom (z-index: 1) -->
+            <div class="project-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <!-- Content: rendered above overlay (z-index: 2) -->
+            <div class="project-hero-content">
+                <h1 class="project-title">Vacuum Brewed Beverage Apparatus</h1>
+                <p class="project-subtitle">Revolutionary Cold Brew Coffee System - US Patent US10624491B1</p>
+                <!-- Quick-scan tags: show at a glance what this project is about -->
+                <div class="project-meta">
+                    <span class="project-tag">Patent Granted</span>
+                    <span class="project-tag">Product Design</span>
+                    <span class="project-tag">Innovation</span>
+                    <span class="project-tag">2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         MAIN CONTENT
+         All page content lives inside .project-content > .container.
+         Sections are stacked vertically, each using .content-section
+         as the standard content wrapper (max-width: 85%, margin: auto,
+         padding: 0 3rem) to keep text readable and centered on wide screens.
+    ====================================================================== -->
+    <section class="project-content">
+        <div class="container">
+
+            <!-- -----------------------------------------------------------------
+                 PATENT OVERVIEW GRID
+                 4-column grid showing the key legal/technical at-a-glance facts.
+                 On mobile (≤768px) this collapses to 2 columns (see detail-pages.css).
+            ------------------------------------------------------------------ -->
+            <div class="project-overview">
+                <div class="overview-grid">
+                    <div class="overview-item">
+                        <h3>Patent Number</h3>
+                        <p>US10624491B1</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Filed</h3>
+                        <p>June 24, 2019</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Granted</h3>
+                        <p>October 5, 2021</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Classification</h3>
+                        <p>A47J31/4403</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -----------------------------------------------------------------
+                 PORTFOLIO IMAGE GRID — ROW 1 (Black Renderings)
+                 3-column equal-sized card grid. Each card uses flex-column layout
+                 so the image area is fixed height (260px) and the text content
+                 below grows to fill remaining space — keeping all cards uniform.
+            ------------------------------------------------------------------ -->
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/cold-brew-system-front-black.png" alt="Front view rendering">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Front View</h3>
+                        <p class="portfolio-description">Front view rendering.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/cold-brew-system-back-black.png" alt="Back view rendering">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Back View</h3>
+                        <p class="portfolio-description">Back view rendering.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/cold-brew-system-isometric-black.png" alt="Isometric view">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Isometric</h3>
+                        <p class="portfolio-description">Isometric view rendering.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -----------------------------------------------------------------
+                 PORTFOLIO IMAGE GRID — ROW 2 (White Rendering, Prototype, Colors)
+                 Same 3-column grid pattern as row 1 for consistent visual rhythm.
+            ------------------------------------------------------------------ -->
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/cold-brew-system-isometric-white.png" alt="White model rendering">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Rendering In White Isometric View</h3>
+                        <p class="portfolio-description">White cold brew system rendering.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/cold-brew-system-prototype.jpg" alt="Vacuum Cold Brew System - Main Photo">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Real World Prototype</h3>
+                        <p class="portfolio-description">Working prototype.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/cold-brew-system-colors.png" alt="Color-coded components">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Color Renderings</h3>
+                        <p class="portfolio-description">Possible color options.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -----------------------------------------------------------------
+                 THE INNOVATION
+                 Lead-in summary for the patent. Uses standard paragraph size
+                 to match the Development Journey section below.
+                 Wrapped in .project-description for max-width and spacing.
+            ------------------------------------------------------------------ -->
+
+            <div class="project-description">
+
+                <h2>The Innovation</h2>
+                <p>
+                    A revolutionary, vacuum based, cold brew coffee brewing system that reduces brewing time from
+                    24 hours to just 10 minutes, while maintaining superior flavor extraction and consistency over
+                    traditional methods.
+                </p>
+
+                <p>
+                    Traditional cold brew coffee requires at least 12-24 hours of steeping time. I invented a vacuum
+                    extraction
+                    system that uses controlled low pressure cycles to accelerate the extraction process without
+                    compromising flavor quality. All this while using less coffee than typical cold brewing methods.
+                    This patent represents a revolution in cold brew coffee preparation.
+                </p>
+            </div>
+
+            <!-- -----------------------------------------------------------------
+                 DEVELOPMENT JOURNEY
+                 Personal narrative section explaining the problem, motivation,
+                 and iteration process. Uses standard .content-section wrapper.
+            ------------------------------------------------------------------ -->
+            <div class="content-section">
+                <h3>Development Journey</h3>
+                <p>
+                    As a frequent cold brew drinker, I was frustrated by the 24-hour wait time which made planning
+                    my coffee routine difficult. I began to explore the potential of vacuum extraction in this arena,
+                    and realized that using vacuum based systems for coffee brewing would work extremely well at
+                    saturating the grounds and shortening the brew time. By applying a strong vacuum pressure, holding
+                    until the trapped gases are removed, and then releasing the vacuum, water in submerged grounds
+                    would be forced deep into the cellular structure of the grounds. Repeating this process effectively
+                    pulls the desirable soluble material out of the grounds, yielding a delicious cup of cold brew.
+                    In building a machine that uses this approach, I created a system that maintains all the benefits
+                    of cold brew while eliminating the wait.
+                </p>
+                <p>
+                    The development process involved extensive prototyping, testing different vacuum levels,
+                    grind sizes, and water temperatures (ice water, room temperature, and slightly warm). I built
+                    and tested numerous iterations before achieving the optimal balance of speed, flavor, and
+                    consistency. The result is a system that produces cold brew indistinguishable from 24-hour
+                    steep methods, or better, in just 10 minutes.
+                </p>
+            </div>
+
+            <!-- -----------------------------------------------------------------
+                 KEY BENEFITS
+                 2×2 feature card grid highlighting the four main selling points.
+                 Grid is centered at 75% width on desktop, collapses to 1 column
+                 on mobile (see detail-pages.css @media block).
+                 Emoji icons are used as lightweight, no-dependency visual anchors.
+            ------------------------------------------------------------------ -->
+            <div class="content-section">
+                <h3>Key Benefits</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <h4>144x Faster</h4>
+                        <p>Reduces 24-hour process to just 10 minutes</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Superior Consistency</h4>
+                        <p>Precise pressure control ensures uniform extraction in every batch</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💰</div>
+                        <h4>Commercial Viability</h4>
+                        <p>Enables on-demand cold brew production for cafes and restaurants</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔬</div>
+                        <h4>Scientific Approach</h4>
+                        <p>Based on fluid dynamics and pressure differential principles</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -----------------------------------------------------------------
+                 HOW IT WORKS — PROCESS TIMELINE
+                 Numbered step-by-step breakdown of the brewing process.
+                 Each .timeline-step has a circular numbered badge (.step-number)
+                 beside the step content, creating a visual numbered list that
+                 is more engaging than a plain <ol>.
+            ------------------------------------------------------------------ -->
+            <div class="content-section">
+                <h3>How It Works</h3>
+                <div class="process-timeline">
+                    <div class="timeline-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Brew Chamber Preparation</h4>
+                            <p>Coffee grounds are loaded into the brew chamber.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Vacuum is Drawn</h4>
+                            <p>A powerful vacuum pump creates controlled negative pressure, drawing water from the
+                                carafe and into the brew chamber while also drawing gases out of the grounds.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Rapid Extraction</h4>
+                            <p>Varying pressure cycles push and pull water through the coffee grounds, maximizing flavor
+                                extraction.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Collection & Filtration</h4>
+                            <p>Brewed coffee is filtered and collected, ready to serve in about 10 minutes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -----------------------------------------------------------------
+                 TECHNICAL SPECIFICATIONS
+                 Key/value pairs in a 2-column grid. Each .spec-item has a colored
+                 label (.spec-label) and a white value (.spec-value), styled with
+                 an accent-colored border for visual structure.
+
+                 CALLOUT BOX: follows the specs grid — uses an orange-tinted
+                 background and border to draw the reader's eye to the key
+                 "what this demonstrates" message for recruiters/employers.
+
+                 PATENT DOCUMENTATION:
+                 - "View on Google Patents" (secondary button) sits left
+                 - "Download PDF" (primary button) sits right
+                 justify-content: space-between handles the alignment.
+                 The iframe below shows the full PDF inline; browsers that
+                 don't support PDF iframes will show a blank area, but the
+                 download button always works as a fallback.
+            ------------------------------------------------------------------ -->
+            <div class="content-section">
+                <h3>Technical Specifications</h3>
+                <div class="tech-specs">
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Brew Time:</span>
+                            <span class="spec-value">10 minutes (vs 24 hours traditional)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Vacuum Level:</span>
+                            <span class="spec-value">Powerful deep vacuum pressure</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Capacity:</span>
+                            <span class="spec-value">Scalable from personal to commercial</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Materials:</span>
+                            <span class="spec-value">Food-grade metals, Silicone, & glass</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Temperature:</span>
+                            <span class="spec-value">Controlled ambient extraction</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Filtration:</span>
+                            <span class="spec-value">Integrated fine-mesh system</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Callout box: high-visibility summary for recruiters scanning the page -->
+                <div class="callout-box">
+                    <h4>What This Patent Demonstrates</h4>
+                    <p>
+                        This isn't just a coffee maker—it's proof that I can identify inefficiencies in existing
+                        processes, apply engineering principles to solve them, and create patentable innovations.
+                        The same problem-solving approach I used here translates directly to product development
+                        in any industry. I don't just optimize existing designs; I reimagine what's possible.
+                    </p>
+                </div>
+
+                <!--PATENT DOCUMENTATION: header + action buttons + embedded PDF viewer -->
+                <h3>Patent Documentation</h3>
+                <!-- Patent viewer: header with action buttons + inline PDF iframe.
+             Buttons use justify-content: space-between so Google Patents
+             sits on the left and Download PDF sits on the right.
+             The iframe embeds the local PDF file directly in the page. -->
+                <div class="patent-document">
+                    <div class="patent-doc-header">
+                        <a href="https://patents.google.com/patent/US10624491B1/en?oq=US10624491B1" target="_blank"
+                            rel="noopener" class="btn btn-secondary">View on Google Patents</a>
+                        <a href="pdfs/vacuum-coffeemaker-patent.pdf" download class="btn btn-primary">Download PDF</a>
+                    </div>
+
+                    <iframe src="pdfs/vacuum-coffeemaker-patent.pdf" class="patent-iframe"
+                        title="Vacuum Brewed Beverage Apparatus — Patent US10624491B1"></iframe>
+
+                </div>
+            </div>
+        </div>
+        <!-- -----------------------------------------------------------------
+                     CALL TO ACTION
+                     Closing section that converts page visitors into contacts.
+                     Centered text with two buttons: primary leads to the contact
+                     form, secondary returns to the main portfolio grid.
+                ------------------------------------------------------------------ -->
+        <div class="project-cta">
+            <h2>Innovation is in My DNA</h2>
+            <p>
+                This patent is one example of how I approach problems—with creativity, technical rigor,
+                and a commitment to creating solutions that actually work. Let's apply this same innovation
+                to your product challenges.
+            </p>
+            <div class="cta-buttons">
+                <a href="index.html#contact" class="btn btn-primary btn-large">Discuss Your Project</a>
+                <a href="index.html#portfolio" class="btn btn-secondary btn-large">View More Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         FOOTER
+         Consistent with index.html footer. All internal links use the
+         index.html# prefix because this is a separate page, not a scroll
+         position on the current page.
+    ====================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div><a href="index.html#home" class="logo-large">MV</a></div>
+                    <p>Product Design Engineer & Innovator</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#patents">Patents</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <div class="contact-details">
+                        <p><span class="contact-label">Email</span> <a
+                                href="mailto:valimichael84@gmail.com">valimichael84@gmail.com</a></p>
+                        <p><span class="contact-label">Call</span> <a href="tel:+16127199181">(612) 719-9181</a></p>
+                        <a href="https://maps.app.goo.gl/9mNbehaqarzEzC7N9" class="contact-link">Easley, SC</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Michael Valiquette Jr. All rights reserved.</p>
+                <p class="footer-tagline">Transforming Ideas Into Reality</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =====================================================================
+         LIGHTBOX MODAL
+         Overlay that displays a portfolio image full-size.
+         Opened by clicking any .portfolio-image; navigated with prev/next
+         buttons or arrow keys; closed with the X button, Escape, or a
+         click on the dark backdrop.
+    ====================================================================== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#8249;</button>
+        <button class="lightbox-next" aria-label="Next image">&#8250;</button>
+        <div class="lightbox-content">
+            <img class="lightbox-img" src="" alt="">
+            <p class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- script.js handles: mobile nav toggle, hamburger animation, scroll-based nav styling -->
+    <script src="script.js"></script>
+
+    <script>
+        /* Lightbox — page-specific, self-contained */
+        (function () {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = lightbox.querySelector('.lightbox-img');
+            const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+            const closeBtn = lightbox.querySelector('.lightbox-close');
+            const prevBtn = lightbox.querySelector('.lightbox-prev');
+            const nextBtn = lightbox.querySelector('.lightbox-next');
+
+            /* Build an ordered array of all portfolio image cards */
+            const items = Array.from(document.querySelectorAll('.portfolio-grid .portfolio-image'));
+            let current = 0;
+
+            function openLightbox(index) {
+                current = index;
+                const img = items[index].querySelector('img');
+                const titleEl = items[index].closest('.portfolio-item').querySelector('.portfolio-content h3');
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightboxCaption.textContent = titleEl ? titleEl.textContent : '';
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden'; /* prevent background scroll */
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            function navigate(dir) {
+                current = (current + dir + items.length) % items.length;
+                openLightbox(current);
+            }
+
+            /* Click any portfolio image card to open */
+            items.forEach(function (item, i) {
+                item.addEventListener('click', function () { openLightbox(i); });
+            });
+
+            /* Close controls */
+            closeBtn.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) closeLightbox(); /* click on backdrop */
+            });
+
+            /* Navigation */
+            prevBtn.addEventListener('click', function (e) { e.stopPropagation(); navigate(-1); });
+            nextBtn.addEventListener('click', function (e) { e.stopPropagation(); navigate(1); });
+
+            /* Keyboard: Escape to close, arrow keys to navigate */
+            document.addEventListener('keydown', function (e) {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') navigate(-1);
+                if (e.key === 'ArrowRight') navigate(1);
+            });
+        }());
+    </script>
+</body>
+
+</html>
