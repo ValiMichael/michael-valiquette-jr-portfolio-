@@ -2501,7 +2501,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation
     line-height: 1;
     background: none;
     border: none;
-    color: var(--primary-color);
+    color: #FF6B35;
     cursor: pointer;
     opacity: 0.6;
     padding: 0 1.25rem;
@@ -2527,3 +2527,4 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation
     margin-bottom: 3rem;
 
 }
+
